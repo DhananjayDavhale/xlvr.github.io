@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    /* color: white; */
+}
+body{
+   background-color: black;
+   background-image: url("images/bg2.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+
+}
+ /* ----------- This is Navbar ------------  */
+nav{
+    position: fixed;
+    left: -350px;
+    height: 100%;
+    width: 350px;
+    color: #fff6f9;
+    background:#333 ;
+    box-shadow: 0 0 8px rgba(0,0,0,0.8);
+    transition: all .6s;    
+   
+}
+nav .brand{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background:#333;
+    font-size: 26px;
+    padding: 32px 20px;
+    /*text-transform: uppercase;*/
+}
+/* extra  */
+.brand label{
+    position: absolute;
+    top: 0;
+    right: 2px;
+    user-select: none;
+    padding: 0 3px 0 3px;
+    border: 2px solid rgba(19, 1, 5, 0.918);
+}
+/* extra  */
+nav ul li{
+    cursor: pointer;
+    background: rgb(43, 42, 42);
+    font-size: 20px;
+    width:100%;
+    height: 70px;
+    padding-left: 20px;
+    line-height: 70px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+nav ul li:hover{
+    padding-left: 50px;
+}
+nav ul li:hover a{
+    padding-left: 30px;
+}
+nav ul li a{
+    position: absolute;
+    left: 50px;
+    transition: .4s;
+    font-family: 'Metal Mania', cursive;
+}
+input{
+    display: none;
+}
+.fa-bars{
+	user-select: none;
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    left:10px;
+    color: #f1f1f1;
+    border: 1px solid #ee0968;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+nav .brand .fa-times{
+    cursor: pointer;
+    margin-left: 50px;
+	font-size: 30px;
+	
+}
+input:checked ~ .fa-bars{ display: none; }
+
+input:checked ~ nav{ left: 0; top:0px;}
+
+ /* ----x------ This is Navbar ----x-------  */
+
+
+
+
+
+
+
+
+
+/* this is another file intro file */
+
+.intro{
+	height: auto;
+	width: 90vw;
+	border: 1px solid black;
+	padding: 2% 0 2% 5%;
+	margin: 3% 5vw 0 5vw;
+}
+
+.intro h3{
+    font-size: 2rem;
+    color:white;
+}
+.intro h2{
+    font-size: 3rem;
+    color:white;
+}
+.intro h1{
+    font-size: 4rem;
+	color: hotpink;
+    /* font-family: 'Akronim', cursive; */
+}
+.intro h4{
+    font-size:1rem;
+	color: white;
+	font-weight: 500;
+	letter-spacing: 10px;
+	font-family: 'Libre Caslon Display', serif;
+	font-style: italic;
+	
+}
+.intro button{
+    font-size: 1rem;
+    margin: 30px 25px 50px 0;
+    height:40px;
+    color: rgb(9, 243, 67);
+    background-color: transparent;
+	width: 90px;
+	outline: none;
+	border: 1px solid rgb(245, 6, 105);
+	border-radius: 15px 0px 15px 0px; 
+}
+
+
+
+
+/* --------- This is Feature ----------- */
+
+.feature{
+	height: auto;
+	width: 80vw;
+	margin: 2vh 10vw 2vh 10vw;
+	background-color: black;
+}
+.feature_ch1{
+	height: auto;
+	width: 40vw;
+	color: white;
+	font-size: 2rem;
+	font-weight: 900;
+	padding-left: 30px;
+	border: 1px solid tomato;
+	border-radius: 50px;
+
+}
+.feature .f-img{
+	height: 40px;
+	width: 40px;
+	margin-right: 30px;
+	user-select: none;
+}
+.feature .f-content{
+	font-weight: 900;
+	font-size: 1.2rem;
+	color: tomato;
+	line-height: 70px;
+	cursor: pointer;
+	user-select: none;
+}
+
+/* ----x---- This is Feature ----x------
+
+
+
+/* --------------- Footer ---------------- */
+footer{
+	height: 30vh;
+	width: 98vw;
+	background-color:black;
+	display: flex;
+	justify-content: space-between;
+}
+	/* -------- Footer = First Child-------- */
+	.footer_ch1{
+		height: auto;
+		width:32vw;
+		border: 1px solid tomato;
+	}
+	.footer_ch1 .mypic{
+		height: 80px;
+		width: 80px;
+		margin: 2% 35% 1% 35%;
+		border-radius: 50%;
+		border: 1px solid white;
+	}
+	.footer_ch1_name{
+		height: 15%;
+		width: 60%;
+		text-align: center;
+		font-size: 1.5rem;
+		font-weight: 700;
+		color: tomato;
+		margin:0 23% 0 17%;
+	}
+	.footer_social_icons{
+		height:30%;
+		width: 60%;
+		margin:0 20% 0 20%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.footer_social_icons img{
+		height: 30px;
+		width: 30px;
+		border-radius: 20%;
+		align-self: center;
+	}
+/* ---xx--- Footer = First Child---xx--- */
+
+/* ------- Footer = This is Second Child -- */
+	.footer_ch2{
+		height: auto;
+		width: 32%;
+		border: 1px solid tomato;
+		padding:53px 0 0 30px; 
+	}
+	.footer_ch2 .box{
+		height: auto;
+		width: 80%;
+		display: flex;
+		line-height: 40px;
+		text-align: center;
+	}
+	.footer_ch2 .box img{
+		height: 30px;
+		width: 30PX;
+	}
+	.footer_ch2 .box p{
+		font-size: 1rem;
+		margin-left: 15px;
+		color: tomato;
+	}
+/* --xx--Footer = This is Second Child --xx- */
+
+
+/* ----- --Footer = third Child ------- */
+.footer_ch3{
+	height: auto;
+	width: 32%;
+	border: 1px solid tomato;
+}
+.footer_ch3 .contact_us{
+	height: 20%;
+	width: 60%;
+	font-size: 1.5rem;
+	font-weight: 700;
+	text-align: center;
+	color: turquoise;
+	margin:0 20% 0 20%;
+}
+.footer_ch3 input{
+	display: inline-block;
+}
+.footer_ch3 .email{
+	height: 30px;
+	width: 80%;
+	margin: 2% 10% 2% 10%;
+}
+.footer_ch3 .message{
+	height: 80px;
+	width: 80%;
+	margin: 2% 10% 2% 10%;
+}
+
+/* -----xx--Footer = third Child --xx---- */
+
+
+
+.footer_social_icons img:hover{
+	border:2px solid hotpink;
+	box-shadow: 1px 1px 20px 2px lightgreen;
+}
+
+
+
+@media screen and (min-width: 768px;){
+	.footer_ch2{
+		height: auto;
+		width: 32%;
+		border: 1px solid tomato;
+		padding:53px 0 0 30px; 
+	}
+	.footer_ch2 .box{
+		height: auto;
+		width: 80%;
+		display: flex;
+		line-height: 40px;
+		/*text-align: center;*/
+	}
+	.footer_ch2 .box img{
+		height: 30px;
+		width: 30PX;
+	}
+	.footer_ch2 .box p{
+		font-size: .8rem;
+		margin-left: 0pxpx;
+		color: tomato;
+	}
+}
+@media screen and (max-width: 900px;){
+	.footer_ch2{
+		height: auto;
+		width: 32%;
+		border: 1px solid tomato;
+		padding:53px 0 0 30px; 
+		background-color: yellow;
+	}
+	.footer_ch2 .box{
+		height: auto;
+		width: 80%;
+		display: flex;
+		line-height: 40px;
+		/*text-align: center;*/
+	}
+	.footer_ch2 .box img{
+		height: 30px;
+		width: 30PX;
+	}
+	.footer_ch2 .box p{
+		font-size: .8rem;
+		margin-left: 0px;
+		color: tomato;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px){
+	.intro{
+		height: auto;
+		width: 90vw;
+		border: 1px solid rgb(248, 79, 0);
+		border-radius: 0px 0 300px 0;
+		border-right: double; 
+		border-right-color: rgb(32, 247, 3);
+		border-bottom-color: rgba(0, 255, 149, 0.945);
+		border-bottom: double;
+		border-left-width: 10px;
+		padding: 2% 0 2% 5%;
+		margin: 20% 5vw 0 5vw;
+	}
+
+	.intro h3{
+		font-size: 1.2rem;
+		color:white;
+		font-weight: 300;
+	}
+	.intro h2{
+		font-weight: 600;
+		font-size: 1.8rem;
+		color:white;
+	}
+	.intro h1{
+		font-size: 2.3rem;
+		color: hotpink;
+		/*font-family: 'Akronim', cursive;*/
+	}
+	.intro h4{
+		font-size:.8rem;
+		font-weight: 100;
+		letter-spacing: 3.6px;
+		color: white;
+		font-family: 'Libre Caslon Display', serif;
+	}
+	.intro button{
+		font-size: .6rem;
+		font-weight: 800;
+		margin: 20px 25px 30px 0;
+		height:30px;
+		color: rgb(8, 250, 0);
+		background-color: transparent;
+		width: 70px;
+		outline: none;
+		border: 1px solid rgb(243, 0, 101);
+		border-radius: 15px 0px 15px 0px; 
+	}
+
+	.feature{
+		height: auto;
+		width: 90vw;
+		margin: 2vh 5vw 2vh 5vw;
+		background-color: black;
+	}
+	.feature .f-img{
+		height: 40px;
+		width: 40px;
+		margin-right: 30px;
+		user-select: none;
+	}
+	.feature .f-content{
+		font-weight: 900;
+		font-size: 1.2rem;
+		color: tomato;
+		line-height: 70px;
+		cursor: pointer;
+		user-select: none;
+	}
+
+/* --------- Footer ------------ */
+	footer{
+		display: block;
+		height: auto;
+	}
+	.footer_ch1{
+		width: 100%;
+	}
+	.footer_ch1 .mypic{
+		height: 15%;
+		width: 15%;
+		margin: 2% 42.5% 1% 42.5%;
+		border: 2px dotted hotpink;
+	}
+	.footer_ch1_name{
+		height:auto;
+		width: 60%;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 700;
+		color: tomato;
+		margin: 0 20% 4% 20%;
+	}
+	.footer_social_icons{
+		height: auto;
+		width: 40%;
+		margin: 0 30%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.footer_social_icons img{
+		height: 40px;
+		width: 40px;
+		border-radius: 10px;
+		margin-bottom:20px
+	}
+
+	.footer_ch2{
+		width: 100%;
+		padding:50px 0px 50px 0px;
+	}
+	.footer_ch2 .box{
+		width: 80%;
+		padding: 0;
+		margin: 0 10% 0 10%;
+	}
+	.footer_ch2 .box img{
+		height: 40px;
+		width: 40px;
+	}
+	.footer_ch2 .box p{
+		font-size: 1.4rem;
+
+	}
+
+	.footer_ch3{
+		width: 100%;
+	}
+	.footer_ch3 .contact_us{
+		padding-top: 20px; 
+	}
+	.footer_ch3 .email{
+		width: 65%;
+		color:lightgreen;
+		margin: 2% 17.5% 2% 17.5%;
+		background-color: #333;
+		border: 2px solid rgb(245, 6, 105);;
+	}
+	.footer_ch3 .message{
+		width:65%;
+		color:lightgreen;
+		margin: 0 17.5% 2% 17.5%;
+		background-color: #333;
+		border: 2px solid rgb(245, 6, 105);;
+	}
+
+
+
+
+
+
+
+
+
+/*---xx--- this is footer --xx---- */
+
+
+
+
+
+/*-------- this is media query ------ */
+
+}
